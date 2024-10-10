@@ -14,6 +14,12 @@ const products = [{
     name: 'SILVER GIFT',
     priceCents: 10500,
     subName: 'SILVER GIFT EARRINGS'
+},
+{
+    image: './images/earrings1.png',
+    name: 'SILVER GIFT',
+    priceCents: 15500,
+    subName: 'GOLD GIFT EARRINGS'
 }
 ];
 
@@ -22,7 +28,7 @@ let productsHTML = '';
 products.forEach((product) => {
     productsHTML += ` 
       <div class="product-container">
-        <div class=" earring-img-div">
+        <div class="earring-img-div" id="js-add-to-cart">
           <img
             class="earring-img"
             id="photo"
@@ -41,6 +47,13 @@ products.forEach((product) => {
     `;
  
 });
-console.log(productsHTML);
+// console.log(productsHTML);
+
 
 document.querySelector('#js-earrings-container').innerHTML = productsHTML;
+const prDiv = document.querySelectorAll('#js-add-to-cart')
+ prDiv.forEach((div) => {
+    div.addEventListener('click', () => {
+        console.log("added product");
+    });
+})
