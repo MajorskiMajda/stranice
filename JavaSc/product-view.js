@@ -1,7 +1,7 @@
 
 const products = [{
     image: './images/earrings1.png',
-    name: 'GOLDEN HORIZONttt',
+    name: 'GOLDEN HORIZON',
     priceCents: 19500,
     subName: 'GOLD KNOT EARRINGS'
 }
@@ -23,7 +23,9 @@ products.forEach((product) => {
             <p class="product-sub-heading sans-font">${product.subName}</p>
         </div>
         <div>
-            <button type="button" id="js-add-to-cart" data-product-name="" class="btn sans-font btn-lg btn-block">ADD TO CART</button>
+            <button type="button" id="js-add-to-cart" class="btn sans-font btn-lg btn-block" data-product-name="${product.name}">
+            ADD TO CART
+            </button>
         </div>
         <div class="adittional-info-div sans-font">
             <i class="fi fi-rr-check"> </i>
@@ -40,15 +42,31 @@ products.forEach((product) => {
     </div>
     `;
 });
-console.log(productsHTML);
 
 document.querySelector('#js-product-view').innerHTML = productsHTML;
 
-console.log(productsHTML);
-
  const button = document.querySelector('#js-add-to-cart');
- button.addEventListener('click', () => {
-   console.log("mm")
+    button.addEventListener('click', () => {
+    const productName = button.dataset.productName;
+
+    let matchingItem;
+
+    cart.forEach((item) => {
+        if (productName === item.productName) {
+            matchingItem = item;
+        }
+    });
+
+    if (matchingItem) {
+        matchingItem.quantity += 1;
+    }
+    else {
+        cart.push({
+            productName: productName,
+            quantity: 1
+        });
+    }
+     console.log(cart);
  })
 
 //  prDiv.forEach((div) => {
