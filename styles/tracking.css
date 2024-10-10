@@ -1,0 +1,100 @@
+body, html{
+  background-color: rgb(255, 255, 255);
+}
+.main-container {
+    max-width: 80%;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .order-tracking{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+    padding-bottom: 20px;
+    border: 1px solid rgb(213, 217, 217);
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+  .order-div{
+    height: 15vw;
+    padding-top: 20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    border-bottom:  1px solid rgb(213, 217, 217);
+    background-color: rgb(255, 255, 255);
+  }
+  .back-to-orders-link {
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .delivery-date {
+    background-color: rgb(240, 242, 242);
+    border: 1px solid rgb(213, 217, 217);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 2vw;
+    font-size: 2vw;
+    font-weight: 600;
+    
+  }
+  a{
+    padding-bottom: 20px;
+    color: #f1792f;
+  }
+  .product-info {
+    margin-bottom: 3px;
+    font-size: 2vw;
+    
+  }
+  .product-info-div{
+    display: flex;
+    flex-direction: column;
+    
+    order: 2;
+}
+  
+  .product-image {
+    width: 30%;
+    order: 1;
+  }
+  .progress-labels-container {
+    display: flex;
+    
+    justify-content: space-between;
+    font-size: 2vw;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 5vw;
+  }
+  
+  .current-status {
+    color: #f1792f;
+  }
+  
+  @media (max-width: 575px) {
+    .progress-labels-container {
+      font-size: 3vw;
+      flex-direction: column;
+    }
+}
+.progress-bar-container {
+    height: 2vw;
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #f1792f ;
+    border-radius: 50px;
+    width: 50%;
+  }  

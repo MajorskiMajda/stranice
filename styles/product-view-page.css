@@ -1,0 +1,179 @@
+body{
+background-color:rgb(255, 255, 255) ;
+}
+p{
+  margin-bottom: 0;
+}
+h4{
+margin-bottom: 0;
+}
+.btn{
+  border-radius: 50px !important;
+  background-color: #f1792f;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 2vw;
+  color: white;
+}
+.banner-container{
+  border-top: 1vw solid #f1792f;
+  height: 45vw;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.banner-background{
+  background-image: url("/images/jewelry-panoramic-banner-collage\ \(1\).jpg");
+}
+.banner-background-second{
+  background-image: url("/images/jewelry-panoramic-banner-collage.jpg");
+}
+.btn:hover{
+  color: black;
+  background-color: #f1792f !important;
+}
+
+.product-container{
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw; 
+  width: 80%;
+}
+.info-container{
+  padding-top: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-top: 2px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  text-align: left;
+  margin-bottom: 2vw;
+  font-size: 1.5vw;
+  
+  
+}
+.description-container{
+  width: 50%;
+}
+.list-container{
+  font-size: 1.5vw;
+}
+.description{
+  font-size: 2vw ;
+}
+.description-text{
+  margin-top: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+.product-img-div{
+  background-color: #ffffff;
+  display: flex;
+  width: 30vw;
+  height: 30vw;
+  justify-content: center;
+  align-items: center;
+  border-width: 0.5vw;
+  border-radius: 10vw;
+  border-style: solid;
+  border-color: #f1792f;
+  overflow: hidden; 
+}
+.product-details-div{
+display: grid;
+width: 50%;
+height: fit-content;
+color: black;
+text-align: left;
+}
+.product-sub-heading{
+font-size: 1.5vw;
+opacity: 70%;
+}
+.adittional-info-div{
+  display: grid;
+  grid-template-columns: 0.2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  background-color:#ffffff;
+  gap: 1vw;
+  color: black;
+  padding: 2vw;
+  padding-left: 3vw;
+  border-color: black;
+  border-width: 0.3vw;
+  border-style: solid;
+  border-radius: 3vw;
+  font-size: 1.5vw;
+}
+.product-title-div{
+  display: flex;
+}
+.product-title{
+  text-align: left;
+  font-size: 3vw;
+}
+.product-price{
+font-size: 3vw;
+  margin-left: auto;
+  color: #ff3c00;
+}
+.jew-img{
+  width: 100%;
+}
+.swiper-jew-img{
+  scale: 0.75;
+}
+
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .product-container{
+    flex-direction: column;
+  }
+  .product-img-div{
+    width: 80%;
+    height: 40vw;
+  }
+  .btn{
+    font-size: 3vw;
+  }
+  .jew-img{
+    scale: 0.8;
+  }
+  .product-details-div{
+    width: 80%;
+  }
+  .product-title{
+    font-size: 4vw;
+}
+.swiper-jew-img{
+  scale: 0.5;
+}
+.product-price{
+  font-size: 4vw;
+}
+.product-sub-heading{
+   font-size: 2.5vw;
+}
+.adittional-info-div{
+  font-size: 2.5vw;
+}
+.list-container{
+  font-size: 2vw;
+}
+.info-container{
+  font-size: 2vw;
+}
+.description{
+  font-size: 3vw ;
+}
+}

@@ -1,0 +1,248 @@
+
+p{
+  margin-bottom: 0;
+}
+h4{
+margin-bottom: 0;
+}
+.btn{
+  border-radius: 50px !important;
+  background-color: rgb(255, 124, 10) !important;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 2vw;
+  color: white !important;
+}
+.list-div{
+  height: fit-content;
+  border-radius: 30px !important;
+  overflow: hidden;
+  border: 1.5px solid rgb(213, 217, 217);
+  margin-right: 2vw;
+}
+
+.quantity-info{
+    display: flex;
+    align-items: center;
+    margin-right: 1vw;
+}
+.item-div{
+    width: 100%;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: 1fr;
+    height: fit-content;
+}
+.title-div{
+    display: flex;
+    grid-column-start:  1;
+    grid-column-end: 3;
+    background-color:rgb(240, 242, 242);
+    color: rgb(0, 0, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-left: 1vw;
+}
+.checkout-product-div{
+    display: flex;
+    grid-column-start: auto;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    width: 100%;
+    height: fit-content;
+}
+.order-summary-div{
+    height: fit-content;
+    padding: 2vw;
+    padding-bottom: 1vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  
+}
+.confirm-div{
+    height: fit-content;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    padding-top: 1vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+section{
+    padding: 3vw;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.section-content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  .list-div{
+    width: 65%;
+    flex-direction: column;
+    display: flex;
+  }
+  .sticky-container {
+    height: fit-content;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 35%;
+    display: block;
+    top: 5vw;
+    border-radius: 20px;
+    border: 1.5px solid rgb(213, 217, 217) ;
+    background-color: rgb(254, 254, 254);
+  }
+  .checkout-product-img{
+    width: 25vw;
+  }
+  .checkout-product-text-div{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    justify-content: center;
+  }
+  .font-size{
+    font-size: 2vw;
+    margin: 0;
+    padding: 0.4vw;
+  }
+  .delete-button{
+    background-color: orange;
+    border: none;
+    border-radius: 30px;
+    width: fit-content;
+    padding-left: 2VW;
+    padding-right: 2vw;
+    font-size: 2vw;
+  }
+  .quantity-number{
+    font-size: 2vw;
+    margin: 0;
+    padding: 0.4vw;
+  }
+  .div-total{
+    display: flex;
+  }
+  .total-price{
+    margin-left: auto;
+  }
+  .delivery-options-title {
+    font-weight: 600;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    padding-top: 1vw;
+  }
+  .zz{
+    font-size: 2.5vw;
+    padding-left: 2vw;
+  }
+  .delivery-options{
+    border-top: 0.2vw rgb(96, 96, 96) solid ;
+  }
+  .delivery-option {
+    display: grid;
+    grid-template-columns: 2vw 1fr;
+    margin-bottom: 1vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+  }
+  
+  .delivery-option-input {
+    margin-left: 0px;
+    cursor: pointer;
+    width: 1.5vw;
+  }
+  
+  .delivery-option-date {
+    font-weight: 500;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+  }
+  .order-info{
+    display: flex;
+    align-items: center;
+  }
+  .num-size{
+    margin-left: auto;
+    font-size: 1.5vw;
+  }
+  .delivery-option-price {
+    font-size: 1.2vw;
+    opacity: 70%;
+    padding-left: 1vw;
+  }
+  .button-quantity{
+    margin: 1vw !important;
+    width: 2vw;
+    height: 2vw;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    border-radius: 40vw;
+    font-size: 1vw;
+  }
+
+  @media (min-width: 200px) and (max-width: 768px) {
+    .sticky-container {
+      top: 1vw;
+      position: relative;
+      width: 80%;
+      order: 1;
+    }
+    .list-div{
+      width: 80%;
+    }
+    .section-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } 
+    .item-div{
+      width: 100%;
+    }
+    .btn{
+      font-size: 3vw !important;
+    }
+.num-size{
+  font-size: 2vw ;
+}
+.slika-proiz{
+  width: 50%;
+}
+.delivery-option-price {
+  font-size: 2.5vw;
+}
+.delivery-option {
+  font-size: 3vw;
+}
+.delivery-options-title {
+  font-size: 3vw;
+}
+.font-size{
+  font-size: 2.5vw;
+}
+.delivery-option-date {
+  font-size: 2.8vw;
+}
+.delivery-option-input {
+  width: 3vw;
+}
+.delivery-option {
+  gap: 2vw;
+}
+
+  }

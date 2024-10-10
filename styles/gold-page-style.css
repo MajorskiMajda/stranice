@@ -1,0 +1,21 @@
+html, body {
+    background-color: #e5daca;
+  }
+  .swiper {
+    background-color: #e5daca;
+  }
+.earrings-container{
+  background-color: #e5daca;
+}
+.earring-img-div{
+  background-color: #ffffff;
+}
+.earrings-title{
+  background-color: #e5daca;
+}
+.first-div{
+  background-image: url("/images/gold-background01.png");
+}
+.second-div{
+  background-image: url("/images/gold-background02.png");
+}

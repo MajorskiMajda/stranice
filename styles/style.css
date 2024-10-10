@@ -1,0 +1,190 @@
+.card-div{
+  width: 100%;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:left;
+}
+.first-container{
+  overflow: hidden;
+  height: 45vw ;
+  background-color: black;
+}
+.slogan{
+  color: #eeeeef;
+  letter-spacing: 1vw;
+  line-height: 5vw;
+  font-size: 6vw;
+  padding-left: 5vw;
+  z-index: 3;
+  text-align: center;
+}
+.vid{
+  width: 100%;
+  height: 100%;
+}
+
+/* end of first conainer style */
+
+.since-div{
+  text-align: center;
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 1.5vw !important;
+  padding-bottom: 1vw;
+  padding-left: 9vw;
+  padding-right: 9vw;
+  color: black;
+  border-top: 1vw solid;
+  border-bottom: 1vw solid; 
+  border-color: #f1792f; 
+  z-index: 3;
+}
+.since-header{
+ font-size: 4vw;
+}
+.since-paragraph{
+  padding-top: 2vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  font-size: 2vw;
+  opacity: 100%;
+}
+
+/* end of since band style */
+
+.silver-container{
+  background-color: #eeeeef;
+  border-bottom:2vw solid; 
+  border-color: #f1792f; 
+  height: 55vw;
+}
+.moonlight-h1{
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 6vw;
+  margin-bottom: 0px;
+  letter-spacing: 1vw;
+}
+.moonlight-text-container{
+  position: left;
+  padding-left: 0px;
+  margin-left: -5%; 
+}
+
+/* end of silver product container style */
+
+.gold-container{
+  background-color: black;
+  height: 55vw;
+}
+.sunlight-h1{
+    color: white;
+    text-align: left;
+    font-size: 6vw;
+    margin-bottom: 0px;
+    letter-spacing: 1vw;
+    margin-left: auto;
+}
+.sunlight-text-container{
+  margin-left: auto;
+}
+
+/* end of gold container style */
+
+/* start of shared style */
+
+.product-img{
+  width: 50%;  
+  scale: 0.6;
+}
+.sub-head-collection{
+  text-align: left;
+  margin-bottom: 0px;
+  opacity: 60%;
+  font-size: 3vw;
+}
+.sub-color-bl{
+  color: black !important;
+}
+.sub-color-wh{
+  color: rgb(255, 255, 255) !important;
+}
+.btn{
+  width: 18vw !important;
+  padding: 0px !important;
+  height: 4vw !important;
+  text-align: center !important;
+  background-color: #f1792f !important;
+  border-radius:10vw !important;
+  color: white !important;
+  margin-top: 1vw;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.5vw;
+  font-size: 2vw !important; 
+}
+
+/* end of shared style */
+
+/* responsivnes start------------------------------------ */
+
+  @media (min-width: 200px) and (max-width: 768px) {
+    .first-container{
+      flex-direction: column;
+      height: 150vw;
+    }
+    .gold-container, .silver-container{
+      flex-direction: column;
+      height: fit-content;
+    } 
+    .slogan{
+      font-size: 8vw;
+      line-height: 7vw;
+      margin-top: 19vw;
+      text-align: center;
+    }
+    .btn{
+      width: 25vw !important;
+      height: 8vw !important;
+      font-size: 3vw !important; 
+    }
+    .vid{
+      width: 50%;
+      height: 100%;
+    }
+    .moonlight-text-container{
+      margin-left: 0vw;
+      margin-bottom:10vw;
+    }
+    .sunlight-text-container{
+      order: 2;
+      margin-left: -10vw;
+      margin-bottom:10vw;
+    }
+    .moonlight-h1, .sunlight-h1{
+      font-size: 5vw;
+    }
+
+  .sub-head-collection{
+    font-size: 3vw;
+  }
+  .since-header{
+    font-size: 5vw;
+  }
+  .since-paragraph{
+    font-size: 3vw;
+  }
+  }
+ 
+  /* animations------------------------ */
+
+  .on-scroll-animation{
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+  }
+
+

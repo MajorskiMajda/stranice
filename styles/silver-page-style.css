@@ -1,0 +1,26 @@
+html, body {
+  background-color: #dddddd;
+}
+.swiper {
+  background-color: #dddddd;
+}
+.product-img-div{
+  background-color: #eeeeef;
+}
+
+.earrings-container{
+background-color: #eeeeef;
+}
+.earring-img-div{
+background-color: #ffffff;
+}
+.earrings-title{
+background-color: #eeeeef;
+}
+.first-div{
+background-image: url("/images/Moonlight.png");
+}
+.second-div{
+background-image: url("/images/image.png");
+}
+

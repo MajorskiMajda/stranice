@@ -1,0 +1,205 @@
+html, body {
+    height: 100%;
+    margin: 0%;
+    color: rgb(255, 255, 255);
+    color: black;
+  }
+  /* sunlight/moonlight div start */
+
+  .first-div{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  .first-title{
+    text-align: left;
+    margin-left: 50%;
+    font-size: 6.5vw;
+    line-height: 5vw;
+  }
+  .first-sub-title{
+    text-align: left;
+    margin-left: 50%;
+    font-size: 3vw;
+  }
+
+  /* 14K Gold/925 Silver Div start */
+
+  .second-title{
+    text-align: left;
+    font-size:6.5vw;
+    line-height: 8vw;
+    margin-left: 8%;
+  }
+  .second-sub-title{
+    margin-left: 8%;
+    font-size: 2vw;
+    width: 48vw;
+  }
+  .second-div{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1vw solid #f1792f;
+  }
+  .product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center ;
+  }
+
+ /* products start  */
+
+.name-container{
+  display: grid;
+  align-items: baseline;
+  height: 100%;
+} 
+.product-name{
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 0 !important;
+  font-size: 2vw;
+}
+.price1{
+  text-align: right;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0 !important;
+  font-size: 1.5vw;
+  color: #ff3c00;
+}
+
+.info-container2{
+  display: grid;
+  width: 90%;
+  height: fit-content;
+  text-align: left;
+  margin-top: 2vw;
+}
+.earring-img{
+  width: 100% ;
+  scale: 0.8;
+}
+.earrings-container{
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  position: relative;
+}
+.earring-img-div{
+  display: flex;
+  width: 90%;
+  height: 20vw !important;
+  align-items: center;
+  justify-content: center;
+  border-width: 0.5vw;
+  border-radius: 6vw;
+  border-style: solid;
+  border-color:#f1792f;
+  overflow: hidden;
+}
+.earring-description{
+  font-size: 1vw;
+  margin-top: 0.5vw !important;
+  opacity: 70%;
+}
+.earring-name{
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 0 !important;
+  font-size: 1.5vw;
+}
+.earrings-title{
+  font-size: 5vw;
+  margin: 0;
+  color: black;
+  padding-left: 8vw;
+  padding-bottom: 2vw;
+  padding-top: 2vw;  
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+  .price1{
+    text-align: right;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0 !important;
+    font-size: 3vw;
+    color: #ff3c00;
+  }
+
+  .earrings-container{
+    background-color: #eeeeef;
+    display: grid;
+    grid-template-columns: repeat(2, auto) !important;
+    grid-template-rows: repeat(2, auto) !important;
+    height: auto;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .earring-img-div{
+    background-color: #ffffff;
+    display: flex;
+    width: 80% !important;
+    height: 40vw !important;
+    align-items: center;
+    border-width: 0.5vw;
+    border-radius: 8vw;
+    border-style: solid;
+  }
+  .earring-description{
+    font-size: 2vw !important;
+  }
+  .earring-name{
+    font-size: 3vw !important;
+  }
+}
+@media (min-width: 200px) and (max-width: 480px) {
+
+  .earrings-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+  }
+  .earring-img-div{
+    background-color: #ffffff;
+    display: flex;
+    width: 90%;
+    height: 40vw !important;
+    align-items: center;
+    border-width: 0.5vw ;
+    border-radius: 8vw;
+    border-style: solid;
+    border-color: #f1792f;
+    overflow: hidden;
+  }
+  .earring-description{
+    font-size: 2vw !important;
+  }
+  .earring-name{
+    font-size: 3vw !important;
+  }
+  .info-container2{
+    width: 90%;
+   }
+   .price1{
+    font-size: 3vw;
+  }
+}
